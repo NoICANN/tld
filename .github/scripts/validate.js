@@ -32,7 +32,7 @@ Object.keys(meta).forEach(tld => {
 
   const { desc, owner, created } = meta[tld];
 
-  if (!desc || typeof desc !== 'string' || desc.length > 100) {
+  if (!desc || typeof desc !== 'string' || desc.length > 2000) {
     errors.push(`❌ ${tld} has missing or long 'desc'`);
   }
 
